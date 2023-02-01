@@ -1,11 +1,8 @@
 console.log("works!");
 
 
-const DISCOUNT_NO = 1;
+const COST_PER_KM = 0.21;
 
-const DISCOUNT_UNDER = 0.2;
-
-const DISCOUNT_OVER = 0.4;
 
 
 let input
@@ -17,13 +14,15 @@ element.addEventListener("click",
 
     function() {
 
-        discount = document.getElementById("discount").value
+        distance = document.getElementById("distance").value
+        console.log(distance);
 
+        discount = document.getElementById("discount").value
         console.log(discount);
 
-        input = document.getElementById("distance").value
 
-        console.log(input);
+        let billPrice = (distance * COST_PER_KM);
+        console.log(billPrice + " €");
 
         
 
