@@ -17,11 +17,15 @@ element.addEventListener("click",
 
     function() {
 
+        discount = document.getElementById("discount").value
+
+        console.log(discount);
+
         input = document.getElementById("distance").value
 
         console.log(input);
+
         
-        distance.value
 
         
 
