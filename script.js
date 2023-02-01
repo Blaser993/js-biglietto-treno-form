@@ -23,11 +23,12 @@ element.addEventListener("click",
 
         let billPrice = parseFloat((distance * COST_PER_KM) * discount ).toFixed(2);
         console.log(billPrice + " €");
+        document.getElementById("bill_price").innerHTML = (billPrice)
+
 
     }
 
 )
-
 
 
 
