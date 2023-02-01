@@ -8,14 +8,22 @@
 </head>
 <body>
 
-    <input type="text" name="km" id="kilometer">
 
-    <select name="sconto" id="discount">
-        <option value="nessuno">Nessuno sconto</option>
-        <option value="anziani">Over 65</option>
-        <option value="bambini">Minorenni</option>
+    <h1>kilometri</h1>
 
+    <input item id="distance" type="text" name="km" id="kilometer">
+
+    <select itemid="discount" name="sconto" id="discount">
+        <option id="discount__no" value="nessuno">Nessuno sconto</option>
+        <option id="discount__over" value="anziani">Over 65</option>
+        <option id="discount__under" value="bambini">Minorenni</option>
     </select>
+
+    <button>calcola</button>
+
+    <h1>ecco il prezzo del tuo biglietto</h1>
+
+    <h2 id="billPrice">-</h2>
 
 
     <script src="./script.js" ></script>
