@@ -1,13 +1,19 @@
 console.log("works!");
 
 
+var element = document.getElementById("calcola");
 
-let distance
+element.addEventListener("click",
 
-const COSTO_PER_KM = (distance * 0.21);
+    function() {
+
+        console.log("ciao")
+
+    }
+
+)
 
 
 
-console.log(COSTO_PER_KM);
 
-var element
+
