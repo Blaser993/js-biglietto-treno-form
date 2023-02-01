@@ -21,12 +21,8 @@ element.addEventListener("click",
         console.log(discount);
 
 
-        let billPrice = (distance * COST_PER_KM);
+        let billPrice = parseFloat((distance * COST_PER_KM) * discount ).toFixed(2);
         console.log(billPrice + " €");
-
-        
-
-        
 
     }
 
